@@ -11,14 +11,16 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 html {
     font-size: 62.5%;
+    height: 100vh;
 }
 
 a {
     color: inherit;
+    cursor: pointer;
 }
 
 body {
-    background-color: lightgrey;
+    background-color: #1D4D4F;
 }
 
 .wrapper {
@@ -29,31 +31,40 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 5.5rem;
-    font-family: 'Neucha', cursive;
-    color: darkslategray;
+    font-size: 5rem;
+    font-family: 'Boogaloo', cursive;
+    color: #E5DFDF;
+    margin-bottom: 0;
 }
 
 button {
     display: flex;
-    margin: 0 auto;
+    margin: 25px auto;
     font-size: 2.5rem;
     font-family: 'Open Sans', sans-serif;
-    background-color: #696969;
-    color: white;
+    font-weight: 600;
+    background-color: #357376;
+    color: #E5DFDF;
+    border: 3px solid #E5DFDF;
     padding: 1%;
+}
+
+button:hover,
+button:active {
     cursor: pointer;
-    border-style: none;
+    background-color: #E5DFDF;
+    color: #1D4D4F;
+    border: 3px solid #6BA8A9;
 }
 
 .dogWrapper {
     display: flex;
     justify-content: center;
+    background-color: #357376;
 }
 
 .dogCard {
-    height: 800px;
-    width: 800px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,40 +72,39 @@ button {
     padding: 0;
 }
 
-.dogImage {
-    height: 400px;
-    width: 400px;
+.dogCard img {
+    width: 50%;
+    height: auto;
     object-fit: cover;
-    padding: 5%;
+    border: 5px solid #1D4D4F;
+    margin: 25px 0;
 }
 
 h2 {
-    font-size: 3.5rem;
-    font-family: 'Neucha', cursive;
-    color: darkslategray;
+    font-size: 3rem;
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+    color: #E5DFDF;
     padding: 0;
     margin: 0;
 }
 
-p {
+.dogCard p {
     font-size: 1.5rem;
+    color: #E5DFDF;
     font-family: 'Open Sans', sans-serif;
-}
-
-.dogInfo p {
-    display: flex;
-    background-color: #696969;
-    line-height: 2.5;
-    color: white;
-    justify-content: center;
-
+    text-align: center;
+    padding: 0 25px;
+    flex-wrap: wrap;
 }
 
 .copyrightInfo {
     font-size: 1.5rem;
     text-decoration: none;
-    margin-bottom: 15%;
-    color: grey;
+    margin-top: 25px;
+    color: #E5DFDF;
     display: flex;
     justify-content: center;
 }
