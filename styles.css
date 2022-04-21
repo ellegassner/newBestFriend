@@ -73,7 +73,7 @@ button:active {
 }
 
 .dogCard img {
-    width: 50%;
+    width: 45%;
     height: auto;
     object-fit: cover;
     border: 5px solid #1D4D4F;
@@ -88,7 +88,7 @@ h2 {
     letter-spacing: 2.25px;
     color: #E5DFDF;
     padding: 0;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .dogCard p {
@@ -96,8 +96,10 @@ h2 {
     color: #E5DFDF;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    line-height: 2rem;
     padding: 0 25px;
     flex-wrap: wrap;
+    margin-top: 0;
 }
 
 .copyrightInfo {
