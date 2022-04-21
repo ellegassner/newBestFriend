@@ -106,11 +106,47 @@ h2 {
     margin-top: 25px;
     color: #E5DFDF;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.copyrightInfo p {
+    text-align: center;
 }
 
 .copyrightInfo a {
     text-decoration: none;
+    display: flex;
+    align-self: center;
 }
 
 
+@media (max-width: 600px ) {
+    .wrapper {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+    .dogCard img {
+        width: 80%;
+    }
+
+    .dogCard p {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .copyrightInfo {
+        font-size: 1rem;
+        flex-direction: column;
+    }
+}
