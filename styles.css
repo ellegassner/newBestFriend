@@ -39,11 +39,11 @@ h1 {
 
 button {
     display: flex;
-    margin: 25px auto;
+    margin: 15px auto;
     font-size: 2.5rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    background-color: #357376;
+    background-color: #132525;
     color: #E5DFDF;
     border: 3px solid #E5DFDF;
     padding: 1%;
@@ -60,7 +60,7 @@ button:active {
 .dogWrapper {
     display: flex;
     justify-content: center;
-    background-color: #357376;
+    background-color: #132525;
 }
 
 .dogCard {
