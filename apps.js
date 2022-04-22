@@ -48,9 +48,11 @@ app.dogPopulate = () => {
         //displaying api information
         app.$dogBreed.append(`${randomDog}`);
         app.$dogTemperament.append(`Temperment : ${randomTemperament}`);
-        app.$dogBredFor.append(`Bred For : ${randomBredFor}`);
         app.$dogLifeSpan.append(`Life Span : ${randomLifeSpan}`);
-        
+        if (randomBredFor != undefined){
+            app.$dogBredFor.append(`Bred For : ${randomBredFor}`);
+        }
+
         //second call to api for corresponding image
         $.ajax({
             url: `https://api.thedogapi.com/v1/images/${randomImage.id}`,
