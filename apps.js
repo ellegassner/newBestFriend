@@ -43,12 +43,15 @@ app.dogPopulate = () => {
         const randomBredFor = randomBreed.bred_for;
         const randomLifeSpan = randomBreed.life_span;
         const randomImage = randomBreed.image;
-        console.log("random breed", randomBreed);
 
         //displaying api information
         app.$dogBreed.append(`${randomDog}`);
-        app.$dogTemperament.append(`Temperment : ${randomTemperament}`);
-        app.$dogLifeSpan.append(`Life Span : ${randomLifeSpan}`);
+        if(randomTemperament != undefined){
+            app.$dogTemperament.append(`Temperament : ${randomTemperament}`);
+        }
+        if(randomLifeSpan != undefined){
+            app.$dogLifeSpan.append(`Life Span : ${randomLifeSpan}`);
+        }
         if (randomBredFor != undefined){
             app.$dogBredFor.append(`Bred For : ${randomBredFor}`);
         }
